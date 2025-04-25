@@ -62,7 +62,7 @@ const Book = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pb-16">
       <Navigation />
       
       <div className="pt-20 px-4 md:px-8">

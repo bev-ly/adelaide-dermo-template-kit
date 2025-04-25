@@ -11,7 +11,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 pb-16">
       <Navigation />
       
       <div className="pt-20 px-4 md:px-8">

@@ -5,11 +5,11 @@ import Navigation from '@/components/Navigation';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 pb-16">
       <Navigation />
       
-      {/* Hero Section with adjusted padding for top navigation */}
-      <section className="relative min-h-screen pt-20 flex items-center px-4 md:px-8">
+      {/* Hero Section */}
+      <section className="relative pt-20 flex items-center px-4 md:px-8">
         <div className="w-full max-w-4xl mx-auto">
           <div className="mb-8">
             <h1 className="font-playfair text-4xl md:text-6xl font-bold text-gray-900 mb-4">
