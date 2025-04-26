@@ -69,6 +69,13 @@ const Index = () => {
     },
   ];
 
+  const scrollToBooking = () => {
+    const bookingSection = document.getElementById('book');
+    if (bookingSection) {
+      bookingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#FEF7CD] to-[#F1F0FB]">
       <Navigation />
@@ -86,7 +93,10 @@ const Index = () => {
           </div>
           
           <div className="space-y-4 md:space-y-0 md:space-x-4">
-            <Button className="bg-[#FEC6A1] hover:bg-[#FEC6A1]/90 text-[#333]">
+            <Button 
+              className="bg-[#FEC6A1] hover:bg-[#FEC6A1]/90 text-[#333]"
+              onClick={scrollToBooking}
+            >
               Book Appointment
             </Button>
           </div>
