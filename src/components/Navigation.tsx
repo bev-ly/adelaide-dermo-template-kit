@@ -7,7 +7,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', path: '#' },
+    { name: 'Home', path: '#home' },  // Updated path to match new section id
     { name: 'Services', path: '#services' },
     { name: 'Team', path: '#team' },
     { name: 'Testimonials', path: '#testimonials' },
@@ -21,6 +21,10 @@ const Navigation = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setIsOpen(false);
+    } else if (path === '#home') {
+      // If Home is clicked, scroll to top of the page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setIsOpen(false);
     }
   };
 
@@ -28,7 +32,11 @@ const Navigation = () => {
     <div className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm shadow-md">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a href="#" className="font-playfair text-xl font-semibold text-[#333]">
+          <a 
+            href="#home" 
+            onClick={(e) => scrollToSection(e, '#home')} 
+            className="font-playfair text-xl font-semibold text-[#333]"
+          >
             Adelaide Dermatology
           </a>
 

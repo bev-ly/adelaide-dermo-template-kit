@@ -1,4 +1,3 @@
-
 import { MapPin, Phone, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Navigation from '@/components/Navigation';
@@ -75,7 +74,7 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-20 flex items-center px-4 md:px-8 min-h-[80vh] bg-[#FEC6A1]/10">
+      <section id="home" className="relative pt-20 flex items-center px-4 md:px-8 min-h-[80vh] bg-[#FEC6A1]/10">
         <div className="w-full max-w-4xl mx-auto">
           <div className="mb-8 animate-fade-in">
             <h1 className="font-playfair text-4xl md:text-6xl font-bold text-[#333] mb-4">
